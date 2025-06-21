@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1672531200000,
+    "title": "Getting Started with Modern JavaScript",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?q=80&w=2070&auto=format&fit=crop",
+    "tags": ["javascript", "web dev", "es6", "coding"],
+    "content": "<h2>The Evolution of JavaScript</h2><p>JavaScript has come a long way since its inception. Today, it's the cornerstone of modern web development, powering everything from interactive front-end experiences to robust back-end servers with Node.js.</p><p>This post will explore some of the key features introduced in ES6 (ECMAScript 2015) that have fundamentally changed how we write JavaScript.</p><h3>1. Arrow Functions</h3><p>A concise syntax for writing function expressions. They are especially useful for inline functions and maintaining the 'this' context.</p><code><pre>// Traditional Function\nconst add = function(a, b) {\n  return a + b;\n};\n\n// Arrow Function\nconst addArrow = (a, b) => a + b;</pre></code><br><h3>2. Let and Const</h3><p>Block-scoped variables that solve many of the problems associated with 'var'. Use 'const' for variables that won't be reassigned and 'let' for variables that will.</p><br><!-- ✅ Adsterra Banner Ad 728x90 (Your Code) -->\n<div class=\"ad-container ad-banner-728x90\">\n    <script type=\"text/javascript\">\n    \tatOptions = {\n    \t\t'key' : 'a4865b7ef060ebcfa9a02db3af6569bc',\n    \t\t'format' : 'iframe',\n    \t\t'height' : 90,\n    \t\t'width' : 728,\n    \t\t'params' : {}\n    \t};\n    </script>\n    <script type=\"text/javascript\" src=\"//www.highperformanceformat.com/a4865b7ef060ebcfa9a02db3af6569bc/invoke.js\"></script>\n</div><br><h3>3. Template Literals</h3><p>Allow for embedded expressions and multi-line strings, making string manipulation much cleaner.</p>"
+  },
+  {
+    "id": 1672617600000,
+    "title": "A Guide to Responsive Design with CSS Flexbox",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2070&auto=format&fit=crop",
+    "tags": ["css", "flexbox", "responsive design", "web dev"],
+    "content": "<h2>Why Responsive Design Matters</h2><p>With users accessing websites on a multitude of devices, from phones to desktops, a responsive layout is no longer optional—it's essential. CSS Flexbox provides a powerful and intuitive way to build flexible layouts.</p><h3>The Container (flex-direction)</h3><p>By simply setting 'display: flex;' on a container, you can align its children in a row or column. 'flex-direction' controls the primary axis.</p><br><h3>The Items (flex-grow, flex-shrink, flex-basis)</h3><p>These properties control how flex items grow or shrink to fill available space, giving you fine-grained control over your layout.</p>"
+  },
+  {
+    "id": 1672704000000,
+    "title": "Understanding JSON: The Lingua Franca of the Web",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1526374965328-5f61d4dc18c5?q=80&w=2070&auto=format&fit=crop",
+    "tags": ["json", "data", "api", "javascript"],
+    "content": "<h2>What is JSON?</h2><p>JSON (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for humans to read and write and easy for machines to parse and generate. It has become the de facto standard for APIs and configuration files.</p><h3>Syntax Rules</h3><ul><li>Data is in name/value pairs.</li><li>Data is separated by commas.</li><li>Curly braces hold objects.</li><li>Square brackets hold arrays.</li></ul><p>It's the backbone of this very blog, storing all post data in a structured, accessible way.</p>"
+  }
+]
