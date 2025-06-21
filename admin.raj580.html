@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel - RajGuideline</title>
     <link rel="stylesheet" href="style.css">
-    <!-- ✅ Adsterra Popunder Ad (Your Code) -->
+    <!-- Adsterra Popunder Ad -->
     <script type='text/javascript' src='//pl26830929.profitableratecpm.com/c8/fc/39/c8fc39fb82a72cd6331452b449c2f611.js'></script>
 </head>
 <body>
 
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header">
@@ -23,9 +24,10 @@
 
     <main class="main-content">
         <div class="container">
-            <div class="admin-panel">
+            <!-- This container will be shown only after successful login -->
+            <div class="admin-panel" style="display: none;">
                 
-                <!-- ✅ Adsterra Top Banner Ad 728x90 (Your Code) -->
+                <!-- Adsterra Top Banner Ad -->
                 <div class="ad-container ad-banner-728x90">
                     <script type="text/javascript">
                         atOptions = {
@@ -39,12 +41,33 @@
                     <script type="text/javascript" src="//www.highperformanceformat.com/a4865b7ef060ebcfa9a02db3af6569bc/invoke.js"></script>
                 </div>
                 
+                <!-- Add/Edit Blog Post Form -->
                 <section class="admin-section">
                     <h2 id="form-title">Add New Blog Post</h2>
-                    <form id="blog-form"><!-- ... form content ... --></form>
+                    <form id="blog-form">
+                        <input type="hidden" id="post-id">
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" id="title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="thumbnail">Thumbnail URL</label>
+                            <input type="url" id="thumbnail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tags">Tags (comma-separated)</label>
+                            <input type="text" id="tags" placeholder="e.g. javascript, web dev, css" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="content">Full Content (HTML allowed)</label>
+                            <textarea id="content" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="form-submit-btn">Save Post</button>
+                        <button type="button" class="btn btn-secondary" id="cancel-edit-btn" style="display: none;">Cancel Edit</button>
+                    </form>
                 </section>
 
-                <!-- ✅ Adsterra Mid-page Banner Ad 468x60 (Your Code) -->
+                 <!-- Adsterra Mid-page Banner Ad -->
                 <div class="ad-container ad-banner-468x60">
                     <script type="text/javascript">
                         atOptions = {
@@ -58,18 +81,25 @@
                     <script type="text/javascript" src="//www.highperformanceformat.com/64ec21bcf50c2c2878c9f37a11f41697/invoke.js"></script>
                 </div>
 
+                <!-- Existing Posts -->
                 <section class="admin-section">
                     <h2>Existing Posts</h2>
-                    <div id="posts-list"></div>
+                    <div id="posts-list">
+                        <!-- Post list will be rendered here -->
+                    </div>
                 </section>
                 
+                <!-- Export Data Section -->
                 <section class="admin-section">
                     <h2>Save Changes Permanently</h2>
-                    <!-- ... export section ... -->
+                    <p>Your changes are saved in this browser's local storage. To make them permanent for all visitors, click the button below, copy the text, and paste it into your <strong>blogData.json</strong> file.</p>
+                    <button id="export-json-btn" class="btn btn-primary">Export Data as JSON</button>
+                    <textarea id="json-output" readonly style="width: 100%; min-height: 200px; margin-top: 1rem; display: none;"></textarea>
                 </section>
             </div>
         </div>
     </main>
+
     <script src="admin.js"></script>
 </body>
 </html>
